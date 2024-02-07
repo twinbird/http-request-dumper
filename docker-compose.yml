@@ -1,0 +1,9 @@
+version: "3"
+services:
+  php:
+    image: php:7.2-apache
+    container_name: php
+    ports:
+      - 8000:80
+    volumes:
+      - ./docker/php/src:/var/www/html
