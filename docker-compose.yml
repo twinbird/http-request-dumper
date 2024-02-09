@@ -7,3 +7,4 @@ services:
       - 8000:80
     volumes:
       - ./docker/php/src:/var/www/html
+      - ./docker/php/etc:/usr/local/etc/php/conf.d/
